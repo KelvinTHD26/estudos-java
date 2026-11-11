@@ -8,7 +8,7 @@ São programas de console, em andamento. O repositório mostra o meu estudo dos 
 
 | Pasta | O que tem |
 |---|---|
-| Atividades05 | Introdução a arrays: temperaturas da semana, lista de nomes de alunos e quantidades de produtos em estoque (maior, menor e itens com pouco estoque) |
+| Atividade05 | Introdução a arrays: temperaturas da semana, lista de nomes de alunos e quantidades de produtos em estoque (maior, menor e itens com pouco estoque) |
 | Atividade06 | Métodos: análise de notas de uma turma e controle de vendas semanais |
 | Atividade07 | Arrays e matrizes: gastos da semana, presença de alunos, conversão de temperatura e gols de jogadores |
 | Atividade08 | Matrizes: consumo de energia, vendas por vendedor e semana, notas de alunos com situação (aprovado/reprovado) |
