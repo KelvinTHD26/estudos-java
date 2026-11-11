@@ -7,28 +7,27 @@ public class Exercicio1 {
     static double[] notas = new double[5];
 
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
 
-        CadastrarAluno();
+        cadastrarAluno();
         apresentarAlunos();
 
-        double media = CalcularMedia();
-        double Maior = encontrarMaior();
-        double Menor = encontrarMenor();
+        double media = calcularMedia();
+        double maior = encontrarMaior();
+        double menor = encontrarMenor();
 
         System.out.println("=== Resultados ===");
-        System.out.println("Media da Turma :"+ media);
-        System.out.println("Maior nota :"+ Maior);
-        System.out.println("Menor nota :"+ Menor);
+        System.out.println("Média da Turma :"+ media);
+        System.out.println("Maior nota:"+ maior);
+        System.out.println("Menor nota:"+ menor);
 
-        System.out.println("==== Situação De Cada Aluno ====");
+        System.out.println("==== Situação de Cada Aluno ====");
             for (int i = 0; i < 5; i++) {
-                ApresentarSituacao(nomes[i], notas[i]);
+                apresentarSituacao(nomes[i], notas[i]);
             }
 
         System.out.println("Informe o Aluno para Buscar: ");
         String nomeProcurado = entrada.nextLine();
-        int posicao = BuscarAluno(nomeProcurado);
+        int posicao = buscarAluno(nomeProcurado);
 
         if(posicao != -1){
             System.out.println("Aluno encontrado na posição "  + (posicao + 1) + ": " + nomes[posicao] + " - Nota: " + notas[posicao]);
@@ -37,7 +36,7 @@ public class Exercicio1 {
         }
         entrada.close();
     }
-    public static void CadastrarAluno() {
+    public static void cadastrarAluno() {
         for (int i = 0; i < 5; i++) {
             System.out.println("Digite o nome do aluno " + (i+1) + ": ");
             nomes[i] = entrada.nextLine();
@@ -53,7 +52,7 @@ public class Exercicio1 {
             System.out.println(nomes[i] + " " + notas[i]);
         }
     }
-    public static double CalcularMedia() {
+    public static double calcularMedia() {
         double soma = 0;
         for (int i = 0; i < 5; i++) {
             soma += notas[i];
@@ -79,7 +78,7 @@ public class Exercicio1 {
             }
             return menor;
         }
-        public static int BuscarAluno(String nomeProcurado) {
+        public static int buscarAluno(String nomeProcurado) {
             for (int i = 0; i < 5; i++) {
                 if (nomes[i].equalsIgnoreCase(nomeProcurado)) {
                     return i;
@@ -87,7 +86,7 @@ public class Exercicio1 {
             }
             return -1;
         }
-        public static void ApresentarSituacao(String nome, double nota) {
+        public static void apresentarSituacao(String nome, double nota) {
             String situacao;
 
             if(nota >=  6.0) {
