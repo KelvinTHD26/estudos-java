@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Principal2 {
+public class Divisibilidade {
     // Algoritmo 1: Verifica se um número é divisível por 2, 3 e 5
     public static void verificaDivisibilidade(int n) {
         boolean div2 = (n % 2 == 0);

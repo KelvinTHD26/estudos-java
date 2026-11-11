@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Principal {
+public class MostraProjetos {
     static Scanner entrada = new Scanner(System.in);
     static String[] projetos = new String[4];
     static double[][] notas = new double[4][3];

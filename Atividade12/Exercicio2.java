@@ -4,7 +4,7 @@ public class Exercicio2 {
     static Scanner entrada = new Scanner(System.in);
     static int[][] vendas = new int[3][4];
     public static void main(String[] args) {
-        prencherMatriz();
+        preencherMatriz();
         apresentarMatriz();
 
         int TotalGeral = somarVendas();
@@ -27,7 +27,7 @@ public class Exercicio2 {
         System.out.println("Soma da Diagonal Principal: " + somaDiagonalPrincipal());
         entrada.close();
     }
-    public static void prencherMatriz() {
+    public static void preencherMatriz() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 4; j++) {
                 System.out.println("Informe a vendas do vendedor " + (i+1) + " na semana " + (j+1)+ ": ");

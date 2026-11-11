@@ -1,12 +1,12 @@
 import java.util.Scanner;
-public class test {
+public class Agenda {
     static String[] nomes = new String[4];
     static String[] telefone = new String[4];
     static Scanner entrada = new Scanner(System.in);
 
     public static void main(String[] args) {
         cadastrarContato();
-        apresntarContatos();
+        apresentarContatos();
 
         System.out.println("Busque um contato:");
         int posicao = buscarContato(entrada.nextLine());
@@ -30,7 +30,7 @@ public class test {
             telefone[i] = entrada.nextLine();
         }
     }
-    public static void apresntarContatos() {
+    public static void apresentarContatos() {
         for (int i = 0; i < nomes.length; i++) {
             System.out.println("Nome: " + nomes[i].toUpperCase() +" - "+ " telefone: " + telefone[i]);
         }

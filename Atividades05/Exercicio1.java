@@ -7,7 +7,7 @@ public class Exercicio1 {
         double soma = 0;
         double[] temperatura = new double[7];
         for(int i=0; i<7; i++){
-            System.out.println("Diga a temperatuda do dia "+ (i+1) +": ");
+            System.out.println("Diga a temperatura do dia "+ (i+1) +": ");
             temperatura[i] = entrada.nextDouble();
             soma += temperatura[i];
         }

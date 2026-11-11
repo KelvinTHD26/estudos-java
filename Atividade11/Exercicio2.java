@@ -21,7 +21,7 @@ public class Exercicio2 {
         }
         int maior = matriz[0][0];
         int menor = matriz[0][0];
-        int somaDiagogal = 0;
+        int somaDiagonal = 0;
 
         for (int l = 0; l < 4; l++) {
             for (int c = 0; c < 4; c++) {
@@ -32,7 +32,7 @@ public class Exercicio2 {
                     menor = matriz[l][c];
                 }
                 if (l == c){
-                    somaDiagogal += matriz[l][c];
+                    somaDiagonal += matriz[l][c];
                 }
             }
         }
@@ -55,7 +55,7 @@ public class Exercicio2 {
         System.out.println("=== Resultados ===");
         System.out.println("Maior Valor: " + maior);
         System.out.println("Menor Valor: " + menor);
-        System.out.println("Soma da Diagonal Principal: " + somaDiagogal);
+        System.out.println("Soma da Diagonal Principal: " + somaDiagonal);
 
         entrada.close();
     }
